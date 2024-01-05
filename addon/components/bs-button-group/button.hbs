@@ -10,7 +10,7 @@
     {{did-update this.resetState @reset}}
   >
   <label
-    class="btn {{bs-size-class "btn" @size}} {{bs-type-class "btn" @type default="secondary" outline=@outline}}"
+    class="btn {{if this.active "active"}} {{bs-size-class "btn" @size}} {{bs-type-class "btn" @type default="secondary" outline=@outline}}"
     for={{this.formId}}
   >
     {{#if this.icon}}
